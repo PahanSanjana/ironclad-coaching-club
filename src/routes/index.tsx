@@ -12,7 +12,7 @@ import { coach } from "@/data/site";
 
 const title = `${coach.brand} Coaching — Online Bodybuilding & Personal Training`;
 const description = "Premium online coaching for fat loss, muscle building and bodybuilding contest prep. Plans from LKR 15,000 / 4 weeks.";
-const image = "https://images.unsplash.com/photo-1583454110551-21f2fa2afe61?w=1200&h=630&fit=crop&q=80";
+const image = coach.heroImage;
 
 export const Route = createFileRoute("/")({
   head: () => ({

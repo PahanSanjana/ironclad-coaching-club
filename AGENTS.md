@@ -28,3 +28,6 @@ use the editor.
   own key and store it in Secrets.
 - **Secrets.** Lovable manages them. Do not put secret values in the repo.
 <!-- LOVABLE:END -->
+
+- Keep audit regression tests alongside the existing Vitest tests and browser checks in `scripts/`; verify behavior, not styling snapshots.
+- Exclude generated build and tooling caches from lint; keep all authored source files covered so checks finish reliably.

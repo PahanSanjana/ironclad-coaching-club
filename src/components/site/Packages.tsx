@@ -13,17 +13,17 @@ export function Packages() {
           {packages.map((p, i) => {
             const rec = p.tier === "recommended", prem = p.tier === "premium";
             return (
-              <Reveal key={p.name} delay={i * 100} className={cn(rec && "lg:-translate-y-4")}>
-                <div className={cn("relative flex h-full flex-col border bg-card p-8 transition-all duration-300 hover:-translate-y-1 md:p-10",
+              <Reveal key={p.name} delay={i * 100} className={cn("min-w-0", rec && "lg:-translate-y-4")}>
+                <div className={cn("relative flex h-full min-w-0 flex-col border bg-card p-6 transition-all duration-300 hover:-translate-y-1 sm:p-8 xl:p-10",
                   rec && "border-primary shadow-red", prem && "border-gold/60 shadow-gold")}>
                   {rec && <span className="absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-1 bg-primary px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-primary-foreground"><Flame className="size-3.5" />Recommended</span>}
                   {prem && <span className="absolute -top-4 left-1/2 flex -translate-x-1/2 items-center gap-1 bg-gold-gradient px-4 py-1.5 text-xs font-bold uppercase tracking-widest text-gold-foreground"><Crown className="size-3.5" />Premium</span>}
                   <h3 className={cn("text-4xl", prem && "text-gold-gradient")}>{p.name}</h3>
                   <p className="mt-2 text-muted-foreground">{p.tagline}</p>
-                  <div className="mt-8 flex items-end gap-2 border-b pb-8">
+                  <div className="mt-8 grid grid-cols-[auto_minmax(0,1fr)] items-end gap-x-2 gap-y-1 border-b pb-8">
                     <span className="mb-2 text-sm font-semibold text-muted-foreground">LKR</span>
-                    <span className="font-display text-6xl">{p.price}</span>
-                    <span className="mb-2 text-sm text-muted-foreground">/ {p.period}</span>
+                    <span className="font-display text-5xl sm:text-6xl lg:text-5xl xl:text-6xl">{p.price}</span>
+                    <span className="col-span-2 text-sm text-muted-foreground">/ {p.period}</span>
                   </div>
                   <ul className="mt-8 flex-1 space-y-4">
                     {p.features.map((f) => (

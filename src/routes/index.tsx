@@ -10,9 +10,8 @@ import { Contact } from "@/components/site/Contact";
 import { Footer, FloatingWhatsApp } from "@/components/site/Footer";
 import { coach } from "@/data/site";
 
-const title = `${coach.brand} Coaching — Online Bodybuilding & Personal Training`;
-const description = "Premium online coaching for fat loss, muscle building and bodybuilding contest prep. Plans from LKR 15,000 / 4 weeks.";
-const image = coach.heroImage;
+const title = `${coach.brand} ${coach.brandSuffix} — Fitness & Bodybuilding Coaching by ${coach.name}`;
+const description = "Certified fitness and bodybuilding coaching for fat loss, muscle building and contest prep. Plans from LKR 15,000 / 4 weeks.";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -23,8 +22,6 @@ export const Route = createFileRoute("/")({
       { property: "og:description", content: description },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
-      { property: "og:image", content: image },
-      { name: "twitter:image", content: image },
     ],
   }),
   component: Index,

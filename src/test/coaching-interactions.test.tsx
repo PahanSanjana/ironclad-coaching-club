@@ -72,7 +72,7 @@ describe("Navigation and FAQ", () => {
     render(<Navbar />);
     const toggle = screen.getByRole("button", { name: "Toggle menu" });
     fireEvent.click(toggle);
-    fireEvent.click(screen.getByRole("link", { name: /IRONFORGE/ }));
+    fireEvent.click(screen.getByRole("link", { name: /RM/ }));
     expect(toggle).toHaveAttribute("aria-expanded", "false");
   });
 

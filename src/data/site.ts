@@ -1,40 +1,50 @@
 // ============================================================
-// SITE CONTENT — replace these placeholders with the coach's real details.
+// SITE CONTENT — Radil Lokitha Manathunga, RM Personal Training
 // ============================================================
 const u = (id: string, w = 1200) => `https://images.unsplash.com/photo-${id}?w=${w}&q=80&auto=format&fit=crop`;
 
 export const coach = {
-  brand: "IRONFORGE",
-  brandSuffix: "Coaching",
-  name: "Kavin Perera",
-  title: "IFBB Pro Coach & Physique Specialist",
-  location: "Colombo, Sri Lanka · Coaching Worldwide",
+  brand: "RM",
+  brandSuffix: "Personal Training",
+  name: "Radil Lokitha Manathunga",
+  title: "Certified Fitness & Bodybuilding Trainer",
+  location: "Moragalla, Sri Lanka · Coaching Worldwide",
   whatsapp: "94771234567", // international format, no + or spaces
-  email: "coach@ironforge.lk",
+  email: "coach@rmpersonaltraining.lk",
   phone: "+94 77 123 4567",
-  heroImage: u("1583454110551-21f2fa2afe61", 2000),
-  portrait: u("1581009146145-b5ef050c2e1e", 1000),
+  heroImage: "/__l5e/assets-v1/ff2a3a21-206c-447b-bf9b-4567c25a019c/radil-hero.jpeg",
+  portrait: "/__l5e/assets-v1/3bf7c8d4-0b8e-454d-bfd8-70bbb7d44e0a/radil-portrait.jpeg",
   bio: [
-    "With over 12 years under the bar and a decade of competing on national stages, I build physiques that are strong, aesthetic and sustainable.",
-    "My coaching blends evidence-based training, precise nutrition and relentless accountability — so you never guess what to do next.",
+    "I'm a certified Fitness and Bodybuilding Trainer with over 3 years of experience in fitness training, bodybuilding, and personalised workout program design — specialising in muscle building, strength training, weight loss, and personalised fitness coaching.",
+    "As an award-winning bodybuilding athlete with international competition experience, I bring practical knowledge and professional training experience to help you achieve your fitness goals.",
   ],
   philosophy: "Discipline beats motivation. Systems beat willpower. Every rep, every meal, every check-in moves you closer.",
+  languages: ["Sinhala", "English"],
+  background: [
+    "Gym Instructor — Power House Gym, Panadura (2022)",
+    "Gym Instructor — Jason's Gym, Rajagiriya (2024)",
+    "Bodybuilding Training — Moragalla (Current)",
+  ],
   stats: [
-    { value: "12+", label: "Years Experience" },
-    { value: "500+", label: "Clients Transformed" },
-    { value: "18", label: "Titles Won" },
-    { value: "25+", label: "Countries Coached" },
+    { value: "3+", label: "Years Experience" },
+    { value: "10+", label: "Podium Finishes" },
+    { value: "5", label: "Certifications" },
+    { value: "2", label: "International Medals" },
   ],
   qualifications: [
-    "ISSA Certified Personal Trainer",
-    "Precision Nutrition Level 2",
-    "NASM Performance Enhancement Specialist",
-    "Contest Prep & Posing Specialist",
+    "Certificate in Physical Fitness Trainer — Fitline Pro Fitness Academy (2025)",
+    "Certificate in Fitness & Bodybuilding Instructor — Fitline Pro Fitness Academy (2025)",
+    "NVQ Level 04 Physical Fitness Trainer — ICFSS (2024)",
+    "Certificate in Weight Loss — Prime International Academy (2024)",
+    "Certificate in Fitness & Bodybuilding Science — Prime International Academy (2024)",
   ],
   achievements: [
-    "Mr. Sri Lanka — Men's Physique Champion (2021)",
-    "South Asian Bodybuilding Championship — Gold (2022)",
-    "Coached 40+ competitors to national podiums",
+    "IFBB Asian Championship 2025 (UAE) — 2nd Place, Junior Men's Fit Bodybuilding U23",
+    "IFBB Mr. Universe 2025 (Thailand) — 2nd Place, Junior Men's Bodybuilding U23",
+    "IFBB Mr. Universe 2025 (Thailand) — 3rd Place, Men's Bodybuilding U80kg",
+    "Mr. Hercules 2025 — 1st Place, 85kg Class & Junior Over 70kg",
+    "CFF Bodybuilding & Fitness Championship 2024 — 1st Place, Junior Under 20",
+    "Mr. Kalutara District 2022 — 2nd Place, Junior Over 70kg & Junior Title",
   ],
   socials: {
     instagram: "https://instagram.com/",

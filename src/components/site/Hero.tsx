@@ -6,7 +6,7 @@ import { WhatsAppIcon } from "./Icons";
 export function Hero() {
   return (
     <section id="top" className="relative flex min-h-[100svh] items-end overflow-hidden pb-16 pt-32 md:items-center md:pb-0">
-      <img src={coach.heroImage} alt="Bodybuilder training in a dark gym" fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-[70%_center]" />
+      <img src={coach.heroImage} alt={`Bodybuilder ${coach.name} posing in a dark studio`} fetchPriority="high" className="absolute inset-0 h-full w-full object-cover object-[65%_20%]" />
       <div className="absolute inset-0 bg-hero-overlay" />
       <div className="absolute inset-0 bg-fade-bottom" />
       <div className="relative mx-auto w-full max-w-7xl px-5">

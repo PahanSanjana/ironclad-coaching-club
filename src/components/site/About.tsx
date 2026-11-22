@@ -8,9 +8,9 @@ export function About() {
       <div className="grid items-center gap-14 lg:grid-cols-2">
         <Reveal className="relative">
           <div className="absolute -left-4 -top-4 h-full w-full border-2 border-primary" />
-          <img src={coach.portrait} alt={`Coach ${coach.name}`} className="relative aspect-[4/5] w-full object-cover grayscale-[30%]" loading="lazy" />
+          <img src={coach.portrait} alt={`Coach ${coach.name}`} className="relative aspect-[4/5] w-full object-cover" loading="lazy" />
           <div className="absolute -bottom-6 right-4 bg-gold-gradient px-6 py-4 text-gold-foreground shadow-gold">
-            <p className="font-display text-4xl">12+</p><p className="text-xs font-bold uppercase tracking-widest">Years Coaching</p>
+            <p className="font-display text-4xl">3+</p><p className="text-xs font-bold uppercase tracking-widest">Years Coaching</p>
           </div>
         </Reveal>
         <Reveal delay={150}>

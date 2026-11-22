@@ -12,9 +12,33 @@ export function Hero() {
       <div className="relative mx-auto w-full max-w-7xl px-5">
         <div className="max-w-3xl">
           <p className="eyebrow animate-rise mb-6">{coach.title}</p>
-          <h1 className="animate-rise text-6xl sm:text-7xl md:text-8xl lg:text-[8.5rem]" style={{ animationDelay: "100ms" }}>
-            Build the body <br /><span className="text-primary">you've earned.</span>
-          </h1>
+          
+<h1
+  className="animate-rise w-full font-display uppercase italic"
+  style={{ animationDelay: "100ms" }}
+>
+  {/* First line */}
+  <span className="mb-1 block text-xl font-normal tracking-[0.28em] text-white sm:text-2xl md:text-[2rem]">
+    Transform Your
+  </span>
+
+  {/* Main heading */}
+  <span className="block whitespace-nowrap text-[clamp(3.5rem,8vw,7rem)] font-black leading-[0.95] tracking-[-0.045em] text-white">
+    Physique
+  </span>
+
+  {/* Champion line */}
+  <span className="mt-1 flex flex-nowrap items-center gap-x-3 whitespace-nowrap">
+    <span className="text-[clamp(1.5rem,3.2vw,2.5rem)] font-medium leading-none text-white">
+      With A
+    </span>
+
+    <span className="text-[clamp(2.5rem,6vw,5rem)] font-black leading-none tracking-[-0.04em] text-red-600">
+      Champion
+    </span>
+  </span>
+</h1>
+
           <p className="animate-rise mt-8 max-w-xl text-lg text-muted-foreground md:text-xl" style={{ animationDelay: "200ms" }}>
             I'm <span className="font-semibold text-foreground">{coach.name}</span>. Elite online coaching for fat loss, muscle and competition prep — built around your body, your schedule, your goals.
           </p>

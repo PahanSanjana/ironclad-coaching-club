@@ -12,8 +12,8 @@ export const coach = {
   whatsapp: "94771234567", // international format, no + or spaces
   email: "coach@rmpersonaltraining.lk",
   phone: "+94 77 123 4567",
-  heroImage: "/__l5e/assets-v1/ff2a3a21-206c-447b-bf9b-4567c25a019c/radil-hero.jpeg",
-  portrait: "/__l5e/assets-v1/3bf7c8d4-0b8e-454d-bfd8-70bbb7d44e0a/radil-portrait.jpeg",
+  heroImage: "/src/assets/radil-hero.jpeg.asset.png",
+  portrait: "/src/assets/radil-portrait.jpeg.asset.png",
   bio: [
     "I'm a certified Fitness and Bodybuilding Trainer with over 3 years of experience in fitness training, bodybuilding, and personalised workout program design — specialising in muscle building, strength training, weight loss, and personalised fitness coaching.",
     "As an award-winning bodybuilding athlete with international competition experience, I bring practical knowledge and professional training experience to help you achieve your fitness goals.",
